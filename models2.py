@@ -489,7 +489,7 @@ class PreparedRequest(RequestEncodingMixin, RequestHooksMixin):
             for header in headers.items():
                 # Raise exception on invalid header value.
                 check_header_validity(header)
-                name, value = header;print(header)
+                name, value = header
                 self.headers[to_native_string(name)] = value
 
     def prepare_body(self, data, files, json=None):
