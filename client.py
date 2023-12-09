@@ -969,7 +969,6 @@ class HTTPConnection:
                 response.close()
 
     def send(self, data):
-        print(data.decode())
         """Send `data' to the server.
         ``data`` can be a string object, a bytes object, an array object, a
         file-like object that supports a .read() method, or an iterable object.
